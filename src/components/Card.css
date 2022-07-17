@@ -1,0 +1,238 @@
+.containercard {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 150px;
+}
+
+.cardtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 150px;
+  padding-right: 170px;
+  padding-bottom: 50px;
+}
+
+.cardtitle h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+}
+
+.btn-desktop {
+  font-size: 15px;
+  letter-spacing: 4px;
+  font-family: "Alata", sans-serif;
+  background-color: white;
+  box-sizing: content-box;
+  border: 1px solid black;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.btn-desktop:hover {
+  color: white;
+  background-color: black;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.cardimg {
+  display: flex;
+  margin-right: 30px;
+  cursor: pointer;
+
+  filter: brightness(85%);
+}
+
+.card-mobile {
+  display: none;
+}
+
+.cardimg:hover img {
+  opacity: 0.3;
+  transition: opacity 0.5s;
+}
+
+.cardimg:hover h1 {
+  color: black;
+}
+
+.cardimg h1 {
+  position: absolute;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+
+  margin-top: 350px;
+  margin-left: 40px;
+}
+
+@media screen and (min-width: 1920px) {
+  .cardtitle {
+    padding-left: 390px;
+    padding-right: 420px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .cardtitle {
+    padding-left: 75px;
+    padding-right: 95px;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .cardtitle {
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .cardtitle h1 {
+    font-size: 35px;
+  }
+
+  .btn-desktop {
+    display: none;
+  }
+
+  .btn-mobile {
+    display: block;
+    margin-top: 30px;
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-family: "Alata", sans-serif;
+    background-color: white;
+    box-sizing: content-box;
+    border: 1px solid black;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .btn-mobile:hover {
+    color: white;
+    background-color: black;
+  }
+
+  .card {
+    display: none;
+  }
+
+  .card-mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .cardimg-mobile {
+    filter: brightness(85%);
+    margin-bottom: 20px;
+  }
+
+  .cardimg-mobile img {
+    width: 100%;
+  }
+
+  .cardimg-mobile:hover img {
+    opacity: 0.3;
+    transition: opacity 0.5s;
+  }
+
+  .cardimg-mobile:hover h1 {
+    color: black;
+  }
+
+  .cardimg-mobile h1 {
+    font-size: 25px;
+    position: absolute;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+
+    margin-top: 150px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-device-width: 640px) {
+  .cardtitle {
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .cardtitle h1 {
+    font-size: 30px;
+  }
+
+  .btn-desktop {
+    display: none;
+  }
+
+  .btn-mobile {
+    display: block;
+    margin-top: 30px;
+    font-size: 15px;
+    letter-spacing: 4px;
+    font-family: "Alata", sans-serif;
+    background-color: white;
+    box-sizing: content-box;
+    border: 1px solid black;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .btn-mobile:hover {
+    color: white;
+    background-color: black;
+  }
+
+  .card {
+    display: none;
+  }
+
+  .card-mobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .cardimg-mobile {
+    filter: brightness(85%);
+    margin-bottom: 20px;
+  }
+
+  .cardimg-mobile img {
+    width: 350px;
+  }
+
+  .cardimg-mobile:hover img {
+    opacity: 0.3;
+    transition: opacity 0.5s;
+  }
+
+  .cardimg-mobile:hover h1 {
+    color: black;
+  }
+
+  .cardimg-mobile h1 {
+    font-size: 25px;
+    position: absolute;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+}

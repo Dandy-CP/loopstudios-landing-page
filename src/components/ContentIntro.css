@@ -1,0 +1,157 @@
+.ContainerIntro {
+  display: flex;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.Intro {
+  display: flex;
+  padding-left: 150px;
+}
+
+.Intro .mobile {
+  display: none;
+}
+
+.IntroText {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  position: absolute;
+
+  background-color: white;
+  box-sizing: content-box;
+  width: 480px;
+  height: 300px;
+  margin-left: 730px;
+
+  padding-left: 85px;
+  padding-top: 30px;
+}
+
+.IntroText h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 50px;
+
+  margin-top: 50px;
+}
+
+.IntroText p {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  color: hsl(0, 0%, 55%);
+
+  margin-top: 0px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1920px) {
+  .Intro {
+    padding-left: 400px;
+  }
+
+  .IntroText {
+    margin-left: 950px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .Intro {
+    padding-left: 100px;
+  }
+
+  .IntroText {
+    margin-left: 600px;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .ContainerIntro {
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+
+    padding-bottom: 150px;
+  }
+
+  .Intro {
+    padding-left: 0px;
+  }
+
+  .Intro .desktop {
+    display: none;
+  }
+
+  .Intro .mobile {
+    width: 650px;
+    display: block;
+  }
+
+  .IntroText {
+    width: 650px;
+    height: 200px;
+    margin-top: 0px;
+    position: relative;
+
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+  }
+
+  .IntroText h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .IntroText p {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-device-width: 640px) {
+  .ContainerIntro {
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+
+    padding-bottom: 30px;
+    padding-top: 100px;
+  }
+
+  .Intro {
+    padding-left: 0px;
+  }
+
+  .Intro .desktop {
+    display: none;
+  }
+
+  .Intro .mobile {
+    width: 300px;
+    margin-left: 0px;
+    display: block;
+  }
+
+  .IntroText {
+    width: 300px;
+    height: 200px;
+    position: relative;
+
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+  }
+
+  .IntroText h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .IntroText p {
+    text-align: center;
+    font-size: 15px;
+  }
+}

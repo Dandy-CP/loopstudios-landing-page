@@ -1,0 +1,128 @@
+.containerfooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 0%, 0%);
+}
+
+.logofooter {
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.item {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 35px;
+}
+
+.listfooter {
+  padding: 50px;
+}
+
+.sosmedtrademrk {
+  display: flex;
+  flex-direction: column;
+  padding-right: 150px;
+}
+
+.sosmedicon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.sosmedicon img {
+  width: 25px;
+  margin-left: 20px;
+  padding-bottom: 5px;
+
+  cursor: pointer;
+}
+
+.sosmedicon img:hover {
+  border-bottom: 2px solid white;
+}
+
+.sosmedtrademrk p {
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  color: hsl(0, 0%, 55%);
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .containerfooter {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .logofooter {
+    margin-left: 0px;
+  }
+
+  .listfooter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    flex-direction: column;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 40px;
+  }
+
+  .item {
+    margin-bottom: 20px;
+  }
+
+  .sosmedicon {
+    justify-content: center;
+  }
+
+  .sosmedtrademrk {
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-device-width: 640px) {
+  .containerfooter {
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+
+  .logofooter {
+    margin-left: 0px;
+  }
+
+  .listfooter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    flex-direction: column;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-right: 40px;
+  }
+
+  .item {
+    margin-bottom: 20px;
+  }
+
+  .sosmedicon {
+    justify-content: center;
+  }
+
+  .sosmedtrademrk {
+    padding-right: 0px;
+  }
+}
